@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -105,9 +106,7 @@ namespace dz3
             {
                 var img = new PictureBox
                 {
-                    Image =
-                        Image.FromFile(
-                            "C:\\Users\\Евгений\\YandexDisk-admin@dudev.ru\\универ\\6 семестр\\net\\dz3\\dz3\\delete.png")
+                    Image = new Bitmap(Properties.Resources.delete)
                 };
                 _manStep = new List<int>() { col, row };
                 if (!CheckPlace(col, row) && Math.Abs(col - _man[1]) <= 1 && Math.Abs(row - _man[2]) <= 1)
@@ -172,8 +171,7 @@ namespace dz3
             {
                 img = new PictureBox
                 {
-                    Image = Image.FromFile(
-                        "C:\\Users\\Евгений\\YandexDisk-admin@dudev.ru\\универ\\6 семестр\\net\\dz3\\dz3\\avatar.png")
+                    Image = new Bitmap(Properties.Resources.avatar)
                 };
                 img.MouseClick += new MouseEventHandler(this.img_MouseClick);
                 _listImg.Add(new List<int>() { robot[1], robot[2] });
@@ -182,8 +180,7 @@ namespace dz3
 
             img = new PictureBox
             {
-                Image = Image.FromFile(
-                    "C:\\Users\\Евгений\\YandexDisk-admin@dudev.ru\\универ\\6 семестр\\net\\dz3\\dz3\\avatar5.png")
+                Image = new Bitmap(Properties.Resources.avatar5)
             };
             tableLayoutPanel1.Controls.Add(img, _man[1], _man[2]);
         }
@@ -271,6 +268,8 @@ namespace dz3
 
             startButton.Enabled = true;
             stepButton.Enabled = false;
+
+            MessageBox.Show(@"Игра окончена");
         }
 
         private void stepButton_Click(object sender, EventArgs e)
