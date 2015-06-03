@@ -1,0 +1,9 @@
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\bin\Debug\dz3.exe.config
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\bin\Debug\dz3.exe
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\bin\Debug\dz3.pdb
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\obj\Debug\dz3.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\obj\Debug\dz3.Form1.resources
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\obj\Debug\dz3.Properties.Resources.resources
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\obj\Debug\dz3.csproj.GenerateResource.Cache
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\obj\Debug\dz3.exe
+C:\Users\Евгений\YandexDisk-admin@dudev.ru\универ\6 семестр\net\dz3\dz3\obj\Debug\dz3.pdb
