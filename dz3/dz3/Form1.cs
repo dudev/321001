@@ -111,7 +111,7 @@ namespace dz3
                 _manStep = new List<int>() { col, row };
                 if (!CheckPlace(col, row) && Math.Abs(col - _man[1]) <= 1 && Math.Abs(row - _man[2]) <= 1)
                 {
-                    Drawer();
+                    //Drawer();
                     tableLayoutPanel1.Controls.Add(img, col, row);
                 }
             }
@@ -162,6 +162,8 @@ namespace dz3
 
         private void Drawer()
         {
+            ControlHelper.SuspendDrawing(tableLayoutPanel1);
+
             tableLayoutPanel1.Controls.Clear();
 
             PictureBox img;
@@ -183,6 +185,8 @@ namespace dz3
                 Image = new Bitmap(Properties.Resources.avatar5)
             };
             tableLayoutPanel1.Controls.Add(img, _man[1], _man[2]);
+
+            ControlHelper.ResumeDrawing(tableLayoutPanel1);
         }
 
         private void RobotStep(List<int> robot)
