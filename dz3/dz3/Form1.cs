@@ -45,7 +45,10 @@ namespace dz3
             while (_robots.Count < 5)
             {
                 var elem = new List<int>() { 2, rand.Next(9), rand.Next(9) };
-                if (!CheckPlace(elem[1], elem[2]))
+                if (!CheckPlace(elem[1], elem[2])
+                    && (elem[1] == _man[1] && Math.Abs(elem[2] - _man[2]) > 2
+                    || elem[2] == _man[2] && Math.Abs(elem[1] - _man[1]) > 2
+                    ))
                 {
                     _robots.Add(elem);
                 }
